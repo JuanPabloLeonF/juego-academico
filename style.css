@@ -444,6 +444,11 @@ body {
         width: 40px;
     }
 
+    .section-3 .section-text {
+        font-size: 7px;
+        width: 55px;
+    }
+
     .title {
         font-size: 1.5rem;
     }
