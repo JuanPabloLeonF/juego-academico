@@ -2,6 +2,8 @@
 
 Un juego interactivo de preguntas y respuestas sobre diferentes materias académicas, diseñado para hacer el aprendizaje divertido y educativo.
 
+visitalo -> [Juego Académico](https://juanpabloleonf.github.io/juego-academico/)
+
 ## 🚀 Características
 
 - **Múltiples Categorías**: Juega con preguntas de diferentes materias como Ciencias, Química, Matemáticas, Español, Sociales y Biología.
@@ -53,15 +55,3 @@ proyecto-nicol/
 ├── functionality.js       # Lógica principal del juego
 └── README.md              # Este archivo
 ```
-
-## 🤝 Contribución
-
-Las contribuciones son bienvenidas. Siéntete libre de enviar un Pull Request con mejoras o nuevas características.
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
----
-
-Desarrollado con ❤️ por [Tu Nombre]
