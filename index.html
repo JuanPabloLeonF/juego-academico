@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas Académicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="main-screen">
+            <h1 class="title">🎓 Juego de Preguntas Académicas</h1>
+            <div class="rounter">
+                <div class="section section-1" data-subject="ciencias">
+                    <div class="section-text">Ciencias Naturales</div>
+                </div>
+                <div class="section section-2" data-subject="quimica">
+                    <div class="section-text">Química</div>
+                </div>
+                <div class="section section-3" data-subject="matematicas">
+                    <div class="section-text">Matemáticas</div>
+                </div>
+                <div class="section section-4" data-subject="español">
+                    <div class="section-text">Español</div>
+                </div>
+                <div class="section section-5" data-subject="sociales">
+                    <div class="section-text">Sociales</div>
+                </div>
+                <div class="section section-6" data-subject="biologia">
+                    <div class="section-text">Biología</div>
+                </div>
+            </div>
+            <p class="instruction-text">Haz clic en una materia para comenzar</p>
+        </div>
+
+        <!-- Pantalla de preguntas -->
+        <div id="quiz-screen" class="quiz-container">
+            <div class="quiz-header">
+                <div class="subject-name" id="subject-display"></div>
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <button class="next-btn" id="next-btn">Siguiente Pregunta</button>
+        </div>
+
+        <!-- Pantalla de resultados -->
+        <div id="results-screen" class="results-container">
+            <h2 class="results-title">¡Juego Completado!</h2>
+            <div class="score" id="final-score"></div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number" id="correct-count"></div>
+                    <div class="stat-label">Correctas</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="incorrect-count"></div>
+                    <div class="stat-label">Incorrectas</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="percentage"></div>
+                    <div class="stat-label">Porcentaje</div>
+                </div>
+            </div>
+            <button class="play-again-btn" onclick="restartGame()">🔄 Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="funcionality.js"></script>
+</body>
+</html>
