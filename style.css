@@ -154,7 +154,6 @@ body {
     bottom: 33%;
     right: 30%;
     transform: rotate(45deg);
-
 }
 
 .section-4 .section-text {
@@ -444,7 +443,13 @@ body {
         width: 40px;
     }
 
-    .section-3 .section-text {
+    .section-3 {
+        bottom: 33%;
+        right: 50%;
+        transform: rotate(45deg);
+    }
+
+    .section-3 > .section-text {
         font-size: 7px;
         width: 55px;
     }
