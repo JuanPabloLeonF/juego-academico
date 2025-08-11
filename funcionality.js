@@ -406,11 +406,11 @@ document.addEventListener('DOMContentLoaded', function() {
     wheelSections.forEach(section => {
         section.addEventListener('click', function() {
             const subject = this.getAttribute('data-subject');
-            console.log(subject);
             startQuiz(subject);
         });
     });
 
+    document.getElementById('prev-btn').addEventListener('click', prevQuestion);
     document.getElementById('next-btn').addEventListener('click', nextQuestion);
 });
 
@@ -452,6 +452,7 @@ function showQuestion() {
         optionsContainer.appendChild(optionElement);
     });
 
+    document.getElementById('prev-btn').style.display = 'block';
     document.getElementById('next-btn').style.display = 'none';
     answered = false;
 }
@@ -476,12 +477,23 @@ function selectOption(selectedIndex) {
         score++;
     }
 
+    document.getElementById('prev-btn').style.display = 'block';
     document.getElementById('next-btn').style.display = 'block';
 }
 
 function nextQuestion() {
     currentQuestionIndex++;
     showQuestion();
+}
+
+function prevQuestion() {
+    const index = currentQuestionIndex--;
+    if (index === 0) {
+        location.reload();
+    }
+
+    showQuestion();
+    return;
 }
 
 function showResults() {

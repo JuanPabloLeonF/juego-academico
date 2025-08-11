@@ -290,7 +290,7 @@ body {
     100% { transform: translateX(0); }
 }
 
-.next-btn {
+.next-btn, .prev-btn {
     background: linear-gradient(135deg, #3498db, #2980b9);
     color: white;
     border: none;
@@ -303,17 +303,22 @@ body {
     box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
 
-.next-btn:hover {
+.next-btn:hover, .prev-btn:hover {
     background: linear-gradient(135deg, #2980b9, #3498db);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
 }
 
-.next-btn:active {
+.next-btn:active, .prev-btn:active {
     transform: translateY(0);
 }
 
-/* Pantalla de resultados */
+.container-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .results-container {
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);

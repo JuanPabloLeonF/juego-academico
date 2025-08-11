@@ -33,7 +33,6 @@
             <p class="instruction-text">Haz clic en una materia para comenzar</p>
         </div>
 
-        <!-- Pantalla de preguntas -->
         <div id="quiz-screen" class="quiz-container">
             <div class="quiz-header">
                 <div class="subject-name" id="subject-display"></div>
@@ -41,10 +40,12 @@
             </div>
             <div class="question" id="question"></div>
             <div class="options" id="options"></div>
-            <button class="next-btn" id="next-btn">Siguiente Pregunta</button>
+            <div class="container-buttons">
+                <button class="prev-btn" id="prev-btn">Anterior Pregunta</button>
+                <button class="next-btn" id="next-btn">Siguiente Pregunta</button>
+            </div>
         </div>
 
-        <!-- Pantalla de resultados -->
         <div id="results-screen" class="results-container">
             <h2 class="results-title">¡Juego Completado!</h2>
             <div class="score" id="final-score"></div>
